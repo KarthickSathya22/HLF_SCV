@@ -8,7 +8,7 @@ import pickle
 app = Flask(__name__)
 
 #Loading a model:
-model = pickle.load(open('model_scv_iso.pkl', 'rb'))
+model = pickle.load(open('model_ok_iso.pkl', 'rb'))
 
 @app.route('/')
 def home():

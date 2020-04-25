@@ -409,9 +409,30 @@
       <div class="item">
           <div class="title-block">
           <div>
-          <p><b>Used Years</b></p>
-          <input type="text" name="vehicle_age" required/>
+          <p><b>Type of Vehicle</b></p>
+          <select name="vehicle" id="type_v" onchange="myFunction()" required>
+            <option value="">Select Category</option>
+            <option value="1">New Vehicle</option>
+            <option value="2">Used Vehicle</option>
+          </select>
           </div>
+          <div>
+          <p><b>Used Years</b></p>
+          <input type="text" name="vehicle_age" id="age_v"/>
+          </div>
+          <script>
+          function myFunction() {
+          var value = document.getElementById("type_v").value;
+          if(value == 1)
+          {
+          document.getElementById("age_v").disabled = true;
+          }
+          else
+          {
+          document.getElementById("age_v").disabled = false;
+          };
+          }
+          </script>
           </div>
       </div>
       </fieldset>

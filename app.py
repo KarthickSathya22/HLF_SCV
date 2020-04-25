@@ -143,9 +143,16 @@ def predict():
     predict_request.append(surplus)
     res.append(surplus)
     
-    veh_age = request.form["vehicle_age"]
-    predict_request.append(veh_age)
-    res.append(veh_age)
+    s1 = request.form["vehicle"]
+    s1_cat = {"1":"New Vehicle","2":"Used Vehicle"}
+    res.append(s1_cat.get(s1))
+    if (int(s1) == 1):
+        predict_request.append(0)
+        res.append(0)
+    else:
+        veh_age = request.form["vehicle_age"]
+        predict_request.append(veh_age)
+        res.append(veh_age)
     
     brand = request.form["brand"]
     brand_type = {746:"Mahindra",

@@ -218,118 +218,6 @@
     <form action="{{ url_for('back')}}" method="post">
       <br>
       <fieldset>
-      <legend><b>Personal Information</b></legend>
-      <div class="item">
-          <div class="title-block">
-          <div>
-          <p><b>Gender</b></p>
-          <input type="text" value="{{data[25]}}" readonly/>
-          </div>
-          <div>
-          <p><b>Number of Dependants</b></p>
-          <input type="text" value="{{data[1]}}" readonly/>
-          </div>
-          <div>
-          <p><b>Number of Years Staying</b></p>
-          <input type="text" value="{{data[3]}}" readonly/>
-          </div>
-          </div>
-      </div>
-      <div class="item">
-          <div class="title-block">
-          <div>
-          <p><b>Borrower Age</b></p>
-          <input type="text" value="{{data[4]}}" readonly/>
-          </div>
-          <div>
-          <p><b>Martial Status</b></p>
-          <input type="text" value="{{data[0]}}" readonly/>
-          </div>
-          <div>
-          <p><b>Type Of Residence</b></p>
-          <input type="text" value="{{data[2]}}" readonly/>
-          </div>
-          </div>
-      </div>
-      <div class="item">
-          <div class="title-block">
-          <div>
-          <p><b>Industry Type</b></p>
-          <input type="text" value="{{data[5]}}" readonly/>
-          </div>
-          <div>
-          <p><b>Total Income per Month</b></p>
-          <input type="text" value="{{data[19]}}" readonly/>
-          </div>
-          <div>
-          <p><b>Total Expense per Month</b></p>
-          <input type="text" value="{{data[20]}}" readonly/>
-          </div>
-          </div>
-      </div>
-      <div class="item">
-          <div class="title-block">
-          <div>
-          <p><b>Gross Surplus per Month</b></p>
-          <input type="text" value="{{data[21]}}" readonly/>
-          </div>
-          <div>
-          <p><b>Avg Balance per Month</b></p>
-          <input type="text" value="{{data[24]}}" readonly/>
-          </div>
-          <div>
-          <p><b>Customer Profile</b></p>
-          <input type="text" value="{{data[6]}}" readonly/>
-          </div>
-          </div>
-      </div>
-      <div class="item">
-          <div class="title-block">
-          <div>
-          <p><b>Customer Segment</b></p>
-          <input type="text" value="{{data[7]}}" readonly/>
-          </div>
-          <div>
-          <p><b>Market Type</b></p>
-          <input type="text" value="{{data[8]}}" readonly/>
-          </div>
-          <div>
-          <p><b>Number of Years In Market</b></p>
-          <input type="text" value="{{data[9]}}" readonly/>
-          </div>
-          </div>
-      </div>
-      </fieldset>
-      <br>
-      <fieldset>
-      <legend><b>Product Information</b></legend>
-      <div class="item">
-          <div class="title-block">
-          <div>
-          <p><b>Product Category</b></p>
-          <input type="text" value="{{data[10]}}" readonly/>
-          </div>
-          <div>
-          <p><b>Type Of Brand</b></p>
-          <input type="text" value="{{data[23]}}" readonly/>
-          </div>
-          <div>
-          <p><b>Vehicle Price</b></p>
-          <input type="text" value="{{data[13]}}" readonly/>
-          </div>
-          </div>
-      </div>
-      <div class="item">
-          <div class="title-block">
-          <div>
-          <p><b>Used Years</b></p>
-          <input type="text" value="{{data[22]}}" readonly/>
-          </div>
-          </div>
-      </div>
-      </fieldset>
-      <br>
-      <fieldset>
       <legend><b>Finance Information</b></legend>
       <div class="item">
           <div class="title-block">
@@ -396,6 +284,123 @@
           </div>
       </div>
       </fieldset>
+      <br> 
+      <fieldset>
+      <legend><b>Personal Information</b></legend>
+      <div class="item">
+          <div class="title-block">
+          <div>
+          <p><b>Gender</b></p>
+          <input type="text" value="{{data[26]}}" readonly/>
+          </div>
+          <div>
+          <p><b>Number of Dependants</b></p>
+          <input type="text" value="{{data[1]}}" readonly/>
+          </div>
+          <div>
+          <p><b>Number of Years Staying</b></p>
+          <input type="text" value="{{data[3]}}" readonly/>
+          </div>
+          </div>
+      </div>
+      <div class="item">
+          <div class="title-block">
+          <div>
+          <p><b>Borrower Age</b></p>
+          <input type="text" value="{{data[4]}}" readonly/>
+          </div>
+          <div>
+          <p><b>Martial Status</b></p>
+          <input type="text" value="{{data[0]}}" readonly/>
+          </div>
+          <div>
+          <p><b>Type Of Residence</b></p>
+          <input type="text" value="{{data[2]}}" readonly/>
+          </div>
+          </div>
+      </div>
+      <div class="item">
+          <div class="title-block">
+          <div>
+          <p><b>Industry Type</b></p>
+          <input type="text" value="{{data[5]}}" readonly/>
+          </div>
+          <div>
+          <p><b>Total Income per Month</b></p>
+          <input type="text" value="{{data[19]}}" readonly/>
+          </div>
+          <div>
+          <p><b>Total Expense per Month</b></p>
+          <input type="text" value="{{data[20]}}" readonly/>
+          </div>
+          </div>
+      </div>
+      <div class="item">
+          <div class="title-block">
+          <div>
+          <p><b>Gross Surplus per Month</b></p>
+          <input type="text" value="{{data[21]}}" readonly/>
+          </div>
+          <div>
+          <p><b>Avg Balance per Month</b></p>
+          <input type="text" value="{{data[25]}}" readonly/>
+          </div>
+          <div>
+          <p><b>Customer Profile</b></p>
+          <input type="text" value="{{data[6]}}" readonly/>
+          </div>
+          </div>
+      </div>
+      <div class="item">
+          <div class="title-block">
+          <div>
+          <p><b>Customer Segment</b></p>
+          <input type="text" value="{{data[7]}}" readonly/>
+          </div>
+          <div>
+          <p><b>Market Type</b></p>
+          <input type="text" value="{{data[8]}}" readonly/>
+          </div>
+          <div>
+          <p><b>Number of Years In Market</b></p>
+          <input type="text" value="{{data[9]}}" readonly/>
+          </div>
+          </div>
+      </div>
+      </fieldset>
+      <br>
+      <fieldset>
+      <legend><b>Product Information</b></legend>
+      <div class="item">
+          <div class="title-block">
+          <div>
+          <p><b>Product Category</b></p>
+          <input type="text" value="{{data[10]}}" readonly/>
+          </div>
+          <div>
+          <p><b>Type Of Brand</b></p>
+          <input type="text" value="{{data[24]}}" readonly/>
+          </div>
+          <div>
+          <p><b>Vehicle Price</b></p>
+          <input type="text" value="{{data[13]}}" readonly/>
+          </div>
+          </div>
+      </div>
+      <div class="item">
+          <div class="title-block">
+          <div>
+          <p><b>Type of Vehicle</b></p>
+          <input type="text" value="{{data[22]}}" readonly/>
+          </div>
+           <div>
+          <p><b>Used Years</b></p>
+          <input type="text" value="{{data[23]}}" readonly/>
+          </div>
+          </div>
+      </div>
+      </fieldset>
+      <br>
         <div class="btn-block">
           <button type="submit">Back to Prediction</button>
         </div>
